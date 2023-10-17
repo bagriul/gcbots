@@ -23,6 +23,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import selenium.webdriver
 from gspread.exceptions import APIError
 from bs4 import BeautifulSoup as bs
+from webdriver_manager.chrome import ChromeDriverManager
 
 bot = telebot.TeleBot('5526110130:AAFPKfy-mHPqcqXgHi_d3rui_1Qq_OEDPc4')
 
@@ -102,8 +103,8 @@ def run():
             opts = selenium.webdriver.ChromeOptions()
             opts.add_argument('--headless')
             chrome_binary_path = r'C:\Users\Manager_2\Downloads\chrome-win64\chrome-win64\chrometest.exe'
-            opts.binary_location = chrome_binary_path
-            driver = selenium.webdriver.Chrome(options=opts)
+            #opts.binary_location = chrome_binary_path
+            driver = selenium.webdriver.Chrome(ChromeDriverManager().install(), options=opts)
             driver.get("https://sales.tsbgalcontract.org.ua/Login.aspx")
             username_field = driver.find_element("id", "eLogin")
             password_field = driver.find_element("id", "ePassword")
