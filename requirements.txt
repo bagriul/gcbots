@@ -10,3 +10,4 @@ selenium
 beautifulsoup4
 pymongo
 pytz
+webdriver_manager
