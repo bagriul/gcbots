@@ -15,7 +15,7 @@ if __name__ == "__main__":
     processes.append(multiprocessing.Process(target=NewRentTelegram2.run))
     processes.append(multiprocessing.Process(target=ThreeiBot.run))
     processes.append(multiprocessing.Process(target=UZ_Kyiv_Lviv_GC_Bot.run))
-    processes.append(multiprocessing.Process(target=Protokoly.run))
+    #processes.append(multiprocessing.Process(target=Protokoly.run))
 
     # Start all processes
     for process in processes:
