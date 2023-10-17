@@ -1,0 +1,12 @@
+schedule
+requests
+lxml
+httplib2
+telebot
+python-dateutil
+browser-cookie3
+gspread
+selenium
+beautifulsoup4
+pymongo
+pytz
