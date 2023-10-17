@@ -20,9 +20,3 @@ if __name__ == "__main__":
     # Start all processes
     for process in processes:
         process.start()
-
-    # Wait for all processes to finish
-    for process in processes:
-        process.join()
-
-    print("All scripts have completed running.")
